@@ -1,0 +1,21 @@
+{
+    "name": "denept/thinkcms-auth",
+    "description": "The ThinkPHP5 thinkcms-auth Package.",
+    "license": "Apache-2.0",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "denept",
+            "email": "denept@talknept.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "thinkcms\\auth\\": ""
+        },
+        "files": [
+            "helper.php"
+        ]
+    }
+}
