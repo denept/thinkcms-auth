@@ -32,6 +32,7 @@ class Auth
 
     public function __construct()
     {
+        $this->request      = Request::instance();
         $this->param        = Request::param();
         $this->module       = Request::module();
         $this->controller   = Request::controller();
