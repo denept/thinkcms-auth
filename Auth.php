@@ -183,10 +183,10 @@ class Auth
         @(eval('$condition= (string)("' . $command . '");'));
         //dump($condition);die;
         $data   = [
-            'action_ip'     => ip2long($this->request->ip()),
+            'action_ip'     => ip2long(Request::ip()),
             'username'      => self::sessionGet('user.nickname'),
             'create_time'   => time(),
-            'log_url'       => '/'.$this->request->pathinfo(),
+            'log_url'       => '/'.Request::pathinfo(),
             'log'           => $condition,
             'user_id'       => $uid,
             'title'         => $title
